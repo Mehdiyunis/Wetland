@@ -1,0 +1,40 @@
+@mixin flex($j-content: null, $a-items: null, $gap: null, $f-direction: null){
+    display: flex;
+    justify-content: $j-content;
+    align-items: $a-items;
+    gap: $gap;
+    flex-direction: $f-direction;
+}
+
+@mixin font($t-align: null, $t-decoration: null, $t-transform: none, $color: inherit, $bg-color: inherit, $l-height: null , $f-size: null, $f-family: $global-font-family, $f-weight: normal, $l-spacing: null){
+    text-align: $t-align;
+    text-decoration: $t-decoration;
+    text-transform: $t-transform;
+    color: $color;
+    background-color: $bg-color;
+    line-height: $l-height;
+    font-size: $f-size;
+    font-family: $f-family;
+    font-weight: $f-weight;
+    letter-spacing: $l-spacing;
+}
+
+@mixin box($d: none , $width: auto , $height: auto , $m: 0, $p: 0, $border-c: transparent, $border-w: 0, $border-s: solid, $border-r: 0, $bg-color: inherit){
+    display: $d;
+    width: $width;
+    height: $height;
+    margin: $m;
+    padding: $p;
+    border-color: $border-c;
+    border-width: $border-w;
+    border-style: $border-s;
+    border-radius: $border-r;
+    background-color: $bg-color;
+
+}
+
+@mixin img($width: auto , $height: auto , $o-fit: contain){
+    width: $width;
+    height: $heigh;
+    object-fit: $o-fit;
+}
