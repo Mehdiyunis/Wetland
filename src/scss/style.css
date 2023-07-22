@@ -1,3 +1,142 @@
+#home-main #home-head-aplication .head-container .content-container .discover-btn, #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-login, #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-get-started {
+  text-transform: none;
+  color: #2f80ed;
+  background-color: #fff;
+  line-height: 40px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+  padding: 0 30px;
+  border-color: #2f80ed;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 4px;
+  background-color: inherit;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+#home-main #home-head-aplication .head-container .content-container .discover-btn::before, #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-login::before, #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-get-started::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  width: 130%;
+  height: 100%;
+  transition: transform 0.35s;
+  transform: translateX(-50%) skewX(45deg) scaleX(0);
+  background-color: #2f80ed;
+}
+#home-main #home-head-aplication .head-container .content-container .discover-btn:hover, #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-login:hover, #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-get-started:hover {
+  color: #fff;
+}
+#home-main #home-head-aplication .head-container .content-container .discover-btn:hover::before, #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-login:hover::before, #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-get-started:hover::before {
+  transform: translateX(-50%) skewX(45deg) scaleX(1);
+}
+
+@keyframes analitic-girl {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes team-meet {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes unity-design {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes active273 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes yellow-triangle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes green-boll {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(-80px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+@keyframes purple-boll {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-40px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  55% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-40px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +156,13 @@
 a {
   text-decoration: none;
   color: black;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #wetland-header {
@@ -108,7 +254,6 @@ a {
   color: #2f80ed;
   background-color: inherit;
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
 }
 #wetland-header .header-nav .logo-menu .menu-container .menu-item-li .inside-items-container {
   display: flex;
@@ -225,7 +370,6 @@ a {
   color: #2f80ed;
   background-color: inherit;
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
 }
 #wetland-header .header-nav .acount-buttons .get-started {
   text-transform: none;
@@ -328,7 +472,6 @@ a {
   border-style: solid;
   border-radius: 0;
   background-color: #fff;
-  /* transform-origin: right; */
   transform: translateX(100%);
   transition: transform 0.3s;
   position: absolute;
@@ -403,46 +546,6 @@ a {
 #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .acordion-menu .menu-item .inside-items-open {
   display: block;
 }
-#wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-login, #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-get-started {
-  text-transform: none;
-  color: #2f80ed;
-  background-color: #fff;
-  line-height: 40px;
-  font-size: 15px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 15px 0;
-  padding: 0 30px;
-  border-color: #2f80ed;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 4px;
-  background-color: inherit;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-}
-#wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-login::before, #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-get-started::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  z-index: -1;
-  width: 130%;
-  height: 100%;
-  transition: transform 0.35s;
-  transform: translateX(-50%) skewX(45deg) scaleX(0);
-  background-color: #2f80ed;
-}
-#wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-login:hover, #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-get-started:hover {
-  color: #fff;
-}
-#wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-login:hover::before, #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-get-started:hover::before {
-  transform: translateX(-50%) skewX(45deg) scaleX(1);
-}
 #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container .mobile-menu .mobile-get-started {
   background-color: #2f80ed;
   color: #fff;
@@ -459,7 +562,7 @@ a {
 #wetland-header .header-nav .acount-buttons .mobile-menu-container .fullscreen-container-open .mobile-menu {
   transform: translateX(0);
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   #wetland-header .header-nav {
     max-width: 960px;
   }
@@ -538,6 +641,13 @@ a {
   background-color: inherit;
   max-width: 1200px;
 }
+#home-main #home-head-aplication .head-container .content-container {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  max-width: 476px;
+  padding: 0 10px;
+}
 #home-main #home-head-aplication .head-container .content-container .analytics {
   text-transform: none;
   color: #179d50;
@@ -545,7 +655,6 @@ a {
   line-height: 24px;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
   display: inline-block;
   width: auto;
   height: auto;
@@ -559,9 +668,9 @@ a {
 }
 #home-main #home-head-aplication .head-container .content-container .aplication {
   display: inline-block;
-  width: auto;
+  width: 100%;
   height: auto;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
   border-color: transparent;
   border-width: 0;
@@ -569,10 +678,224 @@ a {
   border-radius: 0;
   background-color: inherit;
   text-transform: none;
-  color: inherit;
+  color: #070337;
   background-color: inherit;
   line-height: 1.14;
   font-size: 65px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
+}
+#home-main #home-head-aplication .head-container .content-container .stay-track {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0 0 45px 0;
+  padding: 0;
+  border-color: transparent;
+  border-width: 0;
+  border-style: solid;
+  border-radius: 0;
+  background-color: inherit;
+  text-transform: none;
+  color: #52575e;
+  background-color: inherit;
+  line-height: 26px;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+}
+#home-main #home-head-aplication .head-container .content-container .discover-btn {
+  background-color: #2f80ed;
+  color: #fff;
+  width: auto;
+  line-height: 50px;
+}
+#home-main #home-head-aplication .head-container .content-container .discover-btn::before {
+  background-color: #fff;
+}
+#home-main #home-head-aplication .head-container .content-container .discover-btn:hover {
+  color: #2f80ed;
+}
+#home-main #home-head-aplication .head-container .content-container .sponsors {
+  display: flex;
+  width: auto;
+  height: 38px;
+  margin: 60px 0 0 0;
+  padding: 0;
+  border-color: transparent;
+  border-width: 0;
+  border-style: solid;
+  border-radius: 0;
+  background-color: inherit;
+  display: flex;
+  gap: 42px;
+}
+#home-main #home-head-aplication .head-container .content-container .sponsors .sponsors-img-div {
+  width: auto;
+  height: 100%;
+}
+#home-main #home-head-aplication .head-container .content-container .sponsors .sponsors-img-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#home-main #home-head-aplication .active273 {
+  position: absolute;
+  top: 480px;
+  left: 84%;
+  z-index: 9999;
+  animation: active273 7s linear infinite alternate;
+  filter: drop-shadow(rgb(221, 221, 221) 0 0 30px);
+}
+#home-main #home-head-aplication .analitic {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  z-index: 9998;
+  filter: drop-shadow(rgb(221, 221, 221) 0 0 30px);
+  animation: analitic-girl 4s linear infinite alternate;
+}
+#home-main #home-head-aplication .bottom {
+  position: absolute;
+  top: 600px;
+  right: 3%;
+}
+#home-main #home-head-aplication .girl {
+  position: absolute;
+  top: 387px;
+  left: 43.34%;
+  z-index: 9999;
+  animation: analitic-girl 4s linear infinite alternate;
+}
+#home-main #home-head-aplication .green-boll {
+  position: absolute;
+  top: 100px;
+  right: 10%;
+  animation: green-boll 7s linear infinite alternate;
+}
+#home-main #home-head-aplication .pink-boll {
+  position: absolute;
+  top: 330px;
+  left: 2%;
+  animation: green-boll 7s linear infinite alternate;
+}
+#home-main #home-head-aplication .stick-flower {
+  position: absolute;
+  top: 80px;
+  left: calc(530px + 50%);
+  z-index: 999;
+}
+#home-main #home-head-aplication .team-meet {
+  position: absolute;
+  top: 150px;
+  left: 78%;
+  z-index: 9999;
+  animation: team-meet 7s linear infinite alternate;
+  filter: drop-shadow(rgb(221, 221, 221) 0 30px 30px);
+}
+#home-main #home-head-aplication .unity-design {
+  position: absolute;
+  top: 500px;
+  right: 31%;
+  z-index: 9999;
+  animation: unity-design 7s linear infinite alternate;
+  filter: drop-shadow(rgb(221, 221, 221) 0 30px 30px);
+}
+#home-main #home-head-aplication .yellow-triangle {
+  position: absolute;
+  top: 370px;
+  right: 7%;
+  z-index: 9999;
+  animation: yellow-triangle 7s linear infinite alternate;
+}
+#home-main #home-head-aplication .whiteblue-triangle {
+  position: absolute;
+  top: 90px;
+  left: 3%;
+  animation: yellow-triangle 7s linear infinite alternate;
+}
+#home-main #home-head-aplication .circle-whitepink {
+  position: absolute;
+  top: 290px;
+  left: 65%;
+}
+#home-main #home-head-aplication .purple-boll {
+  position: absolute;
+  top: 138px;
+  right: 20%;
+  animation: purple-boll 7s linear infinite alternate;
+}
+@media (max-width: 1199px) {
+  #home-main #home-head-aplication .head-container {
+    padding: 55px 0 680px 0;
+    max-width: 960px;
+  }
+  #home-main #home-head-aplication .head-container .content-container {
+    max-width: 640px;
+  }
+  #home-main #home-head-aplication .analitic {
+    top: auto;
+    bottom: 200px;
+    left: 18%;
+  }
+  #home-main #home-head-aplication .girl {
+    top: auto;
+    bottom: 175px;
+    left: 9.8%;
+  }
+  #home-main #home-head-aplication .unity-design {
+    right: auto;
+    top: auto;
+    bottom: 175px;
+    left: 28%;
+  }
+  #home-main #home-head-aplication .active273 {
+    top: auto;
+    right: 28%;
+    bottom: 220px;
+    left: auto;
+  }
+  #home-main #home-head-aplication .purple-boll {
+    top: auto;
+    bottom: 650px;
+    right: auto;
+    left: 50%;
+  }
+  #home-main #home-head-aplication .team-meet {
+    top: auto;
+    left: auto;
+    right: 33%;
+    bottom: 550px;
+  }
+  #home-main #home-head-aplication .circle-whitepink {
+    top: auto;
+    left: auto;
+    bottom: 80px;
+    right: 20%;
+  }
+  #home-main #home-head-aplication .stick-flower {
+    top: auto;
+    left: auto;
+    right: 27%;
+    bottom: 530px;
+  }
+  #home-main #home-head-aplication .bottom {
+    top: auto;
+    left: auto;
+    right: 4%;
+    bottom: 300px;
+  }
+}
+@media (max-width: 959px) {
+  #home-main #home-head-aplication .head-container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  #home-main #home-head-aplication .head-container {
+    max-width: 540px;
+  }
+  #home-main #home-head-aplication .bottom {
+    bottom: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

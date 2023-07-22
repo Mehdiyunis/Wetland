@@ -6,29 +6,244 @@
             @include box($d: block, $m: 0 auto, $p: 188px 0);
             max-width: 1200px;
             .content-container{
+                @include flex($f-direction: column, $a-items: start);
+                max-width: 476px;
+                padding: 0 10px;
                 .analytics{
-                    @include font( $f-size: 14px, $color: $succesTextColor, $l-height: 24px);
+                    @include font($f-size: 14px, $color: $succesTextColor, $l-height: 24px);
                     @include box($d: inline-block, $p: 0 20px, $border-r: 12px, $bg-color: $succesColor, $m: 0 0 15px 0 );
                 }
 
                 .aplication{
-                    @include box($d: inline-block);
-                    @include font($f-size: 65px, $f-weight: 700, $l-height: 1.14);
+                    @include box($d: inline-block, $m: 0 0 20px 0, $width: 100%);
+                    @include font($f-size: 65px, $f-weight: 700, $l-height: 1.14, $color: $primaryTextColor);
                 }
+
                 .stay-track{
-
+                    @include box($d: inline-block, $m: 0 0 45px 0);
+                    @include font($f-size: 17px, $color: $paragrafColor, $l-height: 26px);
                 }
-                .discover-btn{
 
+                .discover-btn{
+                    @extend %_btn;
+                    background-color: $hoverTextColor;
+                    color: $whiteColor;
+                    width: auto;
+                    line-height: 50px;
+
+                    &::before{
+                        background-color: $whiteColor;
+                    }
+
+                    &:hover{
+                        color: $hoverTextColor;
+                    }
                 }
                 .sponsors{
+                    @include box($d: flex, $height: 38px, $m: 60px 0 0 0);
+                    @include flex($gap: 42px);
                     .sponsors-img-div{
+                        width: auto;
+                        height: 100%;
                         img{
-
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
                         }
                     }
                 }
             }
         }
+
+        .active273{
+            position: absolute;
+            top: 480px;
+            left: 84%;
+            z-index: 9999;
+            animation: active273 7s linear infinite alternate;
+            filter: drop-shadow( rgb(221, 221, 221) 0 0 30px);
+        }
+
+        .analitic{
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            z-index: 9998;
+            filter: drop-shadow( rgb(221, 221, 221) 0 0 30px);
+            animation: analitic-girl 4s linear infinite alternate;
+        }
+
+        .bottom{
+            position: absolute;
+            top: 600px;
+            right: 3%;
+        }
+
+        .girl{
+            position: absolute;
+            top: 387px;
+            left: 43.34%;
+            z-index: 9999;
+            animation: analitic-girl 4s linear infinite alternate;
+        }
+
+        .green-boll{
+            position: absolute;
+            top: 100px;
+            right: 10%;
+            animation: green-boll 7s linear infinite alternate;
+
+        }
+
+        .pink-boll{
+            position: absolute;
+            top: 330px;
+            left: 2%;
+            animation: green-boll 7s linear infinite alternate;
+
+        }
+
+        .stick-flower{
+            position: absolute;
+            top: 80px;
+            left: calc(530px + 50%);
+            z-index: 999;
+        }
+
+        .team-meet{
+            position: absolute;
+            top: 150px;
+            left: 78%;
+            z-index: 9999;
+            animation: team-meet 7s linear infinite alternate;
+            filter: drop-shadow( rgb(221, 221, 221) 0 30px 30px);
+        }
+
+        .unity-design{
+            position: absolute;
+            top: 500px;
+            right: 31%;
+            z-index: 9999;
+            animation: unity-design 7s linear infinite alternate;
+            filter: drop-shadow( rgb(221, 221, 221) 0 30px 30px);
+        }
+
+        .yellow-triangle{
+            position: absolute;
+            top: 370px;
+            right: 7%;
+            z-index: 9999;
+            animation: yellow-triangle 7s linear infinite alternate;
+        }
+
+        .whiteblue-triangle{
+            position: absolute;
+            top: 90px;
+            left: 3%;
+            animation: yellow-triangle 7s linear infinite alternate;
+        }
+
+        .circle-whitepink{
+            position: absolute;
+            top: 290px;
+            left: 65%;
+        }
+
+        .purple-boll{
+            position: absolute;
+            top: 138px;
+            right: 20%;
+            animation: purple-boll 7s linear infinite alternate;
+
+        }
+
+        @media (max-width: 1199px){
+            .head-container{
+                padding: 55px 0 680px 0;
+                max-width: 960px;
+
+                .content-container{
+                    max-width: 640px;
+                }
+            }
+
+            .analitic{
+                top: auto;
+                bottom: 200px;
+                left: 18%;
+            }
+
+            .girl{
+                top: auto;
+                bottom: 175px;
+                left: 9.8%;
+            }
+
+            .unity-design{
+                right: auto;
+                top: auto;
+                bottom: 175px;
+                left: 28%;
+            }
+
+            .active273{
+                top: auto;
+                right: 28%;
+                bottom: 220px;
+                left: auto;
+            }
+
+            .purple-boll{
+                top: auto;
+                bottom: 650px;
+                right: auto;
+                left: 50%;
+            }
+            
+            .team-meet{
+                top: auto;
+                left: auto;
+                right: 33%;
+                bottom: 550px;
+            }
+
+            .circle-whitepink{
+                top: auto;
+                left: auto;
+                bottom: 80px;
+                right: 20%;
+            }
+
+            .stick-flower{
+                top: auto;
+                left: auto;
+                right: 27%;
+                bottom: 530px;
+            }
+            
+            .bottom{
+                top: auto;
+                left: auto;
+                right: 4%;
+                bottom: 300px;
+            }
+        }
+
+        @media (max-width: 959px){
+            .head-container{
+                max-width: 720px;
+            }
+        }
+
+        @media (max-width: 767px){
+            .head-container{
+                max-width: 540px;
+            }
+            
+            .bottom{
+                bottom: 40px;
+            }
+        }
     }
+    
 }

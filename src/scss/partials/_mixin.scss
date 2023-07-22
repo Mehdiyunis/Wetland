@@ -6,7 +6,7 @@
     flex-direction: $f-direction;
 }
 
-@mixin font($t-align: null, $t-decoration: null, $t-transform: none, $color: inherit, $bg-color: inherit, $l-height: null , $f-size: null, $f-family: $global-font-family, $f-weight: normal, $l-spacing: null){
+@mixin font($t-align: null, $t-decoration: null, $t-transform: none, $color: inherit, $bg-color: inherit, $l-height: null , $f-size: null, $f-family: $global-font-family, $f-weight: null, $l-spacing: null){
     text-align: $t-align;
     text-decoration: $t-decoration;
     text-transform: $t-transform;

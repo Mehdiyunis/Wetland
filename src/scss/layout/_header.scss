@@ -231,7 +231,7 @@
               $p: 30px,
               $bg-color: $whiteColor
             );
-            /* transform-origin: right; */
+            
             transform: translateX(100%);
             transition: transform 0.3s;
 
@@ -305,45 +305,7 @@
             }
 
             .mobile-login {
-              @include font(
-                $bg-color: $whiteColor,
-                $color: $hoverTextColor,
-                $l-height: 40px,
-                $f-size: 15px,
-                $f-weight: 600
-              );
-              @include box(
-                $d: block,
-                $border-c: $hoverTextColor,
-                $border-w: 2px,
-                $border-r: 4px,
-                $width: 100%,
-                $p: 0 30px,
-                $m: 15px 0
-              );
-              overflow: hidden;
-              position: relative;
-              z-index: 0;
-
-              &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 50%;
-                z-index: -1;
-                width: 130%;
-                height: 100%;
-                transition: transform 0.35s;
-                transform: translateX(-50%) skewX(45deg) scaleX(0);
-                background-color: $hoverTextColor;
-              }
-
-              &:hover {
-                color: $whiteColor;
-                &::before {
-                  transform: translateX(-50%) skewX(45deg) scaleX(1);
-                }
-              }
+             @extend %_btn;
             }
 
             .mobile-get-started {
@@ -372,7 +334,7 @@
     }
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1199px) {
     .header-nav {
       max-width: 960px;
 
