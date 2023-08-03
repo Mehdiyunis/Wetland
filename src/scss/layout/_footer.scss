@@ -1,0 +1,115 @@
+#wetland-footer {
+  padding: 120px 0 0;
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 65px;
+    .content {
+      list-style: none;
+      .footer-logo {
+        @include box($d: block, $width: 136px, $height: 41px, $m: 0 0 25px 0);
+      }
+      .footer-logo-bottom {
+        @include font(
+          $f-size: 15px,
+          $color: #57556a,
+          $f-weight: 600,
+          $l-height: 26px
+        );
+      }
+      .footer-content-title {
+        @include font(
+          $f-size: 18px,
+          $color: #070337,
+          $f-weight: 700,
+          $l-height: 1.2
+        );
+        margin: 0 0 25px 0;
+      }
+      .footer-connect {
+        margin: 0 0 15px 0;
+        a {
+          @include font(
+            $f-size: 15px,
+            $color: #57556a,
+            $f-weight: 600,
+            $l-height: 26px
+          );
+
+          transition: 0.3s;
+
+          &:hover {
+            color: #7127ea;
+            text-decoration: underline solid 1px #7127ea;
+          }
+        }
+      }
+      .social-connect {
+        @include flex($gap: 0 10px);
+        .icon-container {
+          padding: 20px;
+          border: 1px solid #868d94;
+          position: relative;
+          border-radius: 50px;
+          .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 15px;
+            line-height: 20px;
+            color: #868d94;
+          }
+        }
+      }
+    }
+  }
+
+  .end-text {
+    text-align: center;
+    padding: 25px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #e7ecf1;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #474554;
+  }
+
+  @media (max-width: 1199px) {
+    .footer-container {
+      max-width: 960px;
+    }
+    .end-text {
+      max-width: 960px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .footer-container {
+      max-width: 720px;
+    }
+    .end-text {
+      max-width: 720px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .footer-container {
+      max-width: 540px;
+    }
+    .end-text {
+      max-width: 540px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .footer-container {
+      max-width: 100%;
+    }
+    .end-text {
+      max-width: 100%;
+    }
+  }
+}

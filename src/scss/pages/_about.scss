@@ -1,0 +1,437 @@
+#about-main {
+  #head-section {
+    padding: 150px 20px;
+    text-align: center;
+    background-image: url("https://codeskdhaka.com/wp/wetland/wp-content/uploads/2023/02/page-title.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    .page-name {
+      @include font(
+        $f-size: 60px,
+        $f-weight: 700,
+        $color: $whiteColor,
+        $l-height: 1.2
+      );
+      margin: 0 0 15px 0;
+    }
+    .page-location {
+      span {
+        @include font(
+          $f-size: 15px,
+          $f-weight: 600,
+          $color: $whiteColor,
+          $l-height: 26px
+        );
+        margin: 0 18px;
+      }
+    }
+
+    .half-circle-over-x {
+      position: absolute;
+      width: auto;
+      height: auto;
+      bottom: 0;
+      right: 0;
+    }
+    .half-circle-left-top {
+      position: absolute;
+      width: auto;
+      height: auto;
+      top: 20%;
+      left: 0;
+    }
+    .triangle-rotate {
+      position: absolute;
+      top: 30%;
+      left: 20%;
+      width: auto;
+      height: auto;
+      animation: yellow-triangle 7s linear infinite;
+    }
+  }
+
+  #marketing {
+    padding: 90px 20px 0;
+    .marketing-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      .content {
+        text-align: center;
+        margin: 0 0 50px;
+        .title {
+          @include font(
+            $color: #0f1432,
+            $f-size: 46px,
+            $f-weight: 700,
+            $l-height: 1.2
+          );
+          margin: 0 0 15px 0;
+        }
+        .text {
+          @include font(
+            $color: #57556a,
+            $f-size: 15px,
+            $f-weight: 600,
+            $l-height: 26px
+          );
+        }
+      }
+      .cards {
+        .card-outside {
+          padding: 15px;
+          .card-inside {
+            padding: 40px 60px;
+            box-shadow: 0px 30px 70px 0px rgba(11, 6, 70, 0.08);
+            .img-div {
+              margin: auto;
+              width: 272px;
+              height: 159px;
+              img {
+                object-fit: contain;
+              }
+            }
+            .content {
+              padding: 32px 0 0;
+              text-align: start;
+              margin: 0;
+              .title {
+                @include font(
+                  $color: #070337,
+                  $f-size: 24px,
+                  $f-weight: 700,
+                  $l-height: 1.2
+                );
+                margin: 0 0 8px;
+              }
+              .text {
+                @include font(
+                  $color: #6c6a8a,
+                  $f-size: 15px,
+                  $f-weight: 600,
+                  $l-height: 26px
+                );
+                margin: 0 0 20px;
+              }
+              .chat-btn {
+                @include font(
+                  $color: #0a0030,
+                  $f-size: 14px,
+                  $f-weight: 600,
+                  $l-height: 26px
+                );
+                background-color: transparent;
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #awesome-tool {
+    padding: 120px 20px;
+    .cards {
+      max-width: 1200px;
+      margin: auto;
+      .card-outside {
+        img {
+          object-fit: cover;
+          border-radius: 30px;
+        }
+        .card-inside {
+          height: 100%;
+          @include flex(
+            $f-direction: column,
+            $j-content: center,
+            $a-items: start
+          );
+          .title {
+            @include font(
+              $f-size: 40px,
+              $color: #070337,
+              $f-weight: 800,
+              $l-height: 1.2
+            );
+            margin: 0 0 25px;
+          }
+          .text {
+            @include font($f-size: 15px, $color: #6c6a8a, $l-height: 26px);
+            margin: 0 0 15px;
+          }
+          .okay-tools {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 40px;
+            .tool {
+              i {
+                font-size: 15px;
+                color: #6c6a8a;
+                line-height: 26px;
+                margin: 0 10px 0 0;
+                transition: 0.3s;
+              }
+              span {
+                @include font($f-size: 15px, $color: #6c6a8a, $l-height: 26px);
+                transition: 0.3s;
+                transform: translateX(0);
+              }
+
+              &:hover {
+                i {
+                  color: #7127ea;
+                }
+                span {
+                  color: #7127ea;
+                  transform: translateX(-7px);
+                  display: inline-block;
+                }
+              }
+            }
+          }
+
+          .tool-btn {
+            padding: 0 25px;
+            box-shadow: 0px 20px 60px 0px rgba(15, 0, 40, 0.2);
+            @include font(
+              $f-size: 15px,
+              $l-height: 40px,
+              $f-weight: 600,
+              $color: $whiteColor
+            );
+            background-color: #7127ea;
+            border: none;
+            border-radius: 7px;
+          }
+        }
+      }
+    }
+  }
+
+  #questions-users {
+    padding: 140px 0;
+    .container-questions_and_count {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+
+      .questions-container-outside {
+        padding: 0;
+
+        .questions-container-inside {
+          box-shadow: 0px 30px 70px 0px rgba(11, 6, 70, 0.08),
+            inset 0px 3px 0px 0px rgba(47, 128, 237, 0.004);
+          padding: 0 40px;
+          border-radius: 20px;
+          border-top: #448cef solid 3px;
+          .question {
+            border-bottom: 1px solid #eaedff;
+            padding: 35px 0;
+            .question-item {
+              @include font(
+                $f-size: 18px,
+                $f-weight: 600,
+                $color: #021937,
+                $l-height: 1.2
+              );
+              @include flex($j-content: space-between);
+              transition: color 0.3s;
+              .plus {
+                @include font(
+                  $f-size: 28px,
+                  $color: #070337,
+                  $f-weight: 500,
+                  $l-height: 18px
+                );
+                margin: 0;
+                transition: color 0.3s;
+              }
+
+              &:hover {
+                color: $hoverTextColor;
+
+                .plus {
+                  color: $hoverTextColor;
+                }
+              }
+            }
+
+            .answer-item {
+              padding: 20px 0 0;
+              margin: 0;
+              @include font(
+                $f-size: 15px,
+                $color: #474554,
+                $f-weight: 600,
+                $l-height: 26px
+              );
+              display: none;
+            }
+          }
+
+          .activ {
+            .answer-item {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .users-container {
+        margin-left: auto;
+        .user-title {
+          @extend %_h2Titles;
+          width: 100%;
+          margin: 0 0 15px 0;
+        }
+        .user-text {
+          @include font(
+            $f-weight: 600,
+            $f-size: 15px,
+            $color: #6c6a8a,
+            $l-height: 26px
+          );
+
+          margin: 0 0 35px 0;
+        }
+        .counts-container {
+          .count-content {
+            display: inline-block;
+            margin: 0 40px 0 0;
+            .number {
+              margin: 0;
+              color: black;
+              @include font(
+                $color: #fe1a86,
+                $f-size: 40px,
+                $l-height: 1.2,
+                $f-weight: 700
+              );
+            }
+
+            .what-show-number {
+              margin: 0;
+              @include font(
+                $f-size: 15px,
+                $color: #474554,
+                $f-weight: 600,
+                $l-height: 26px
+              );
+            }
+
+            &:nth-of-type(2) .number {
+              color: #0242fd;
+            }
+
+            &:last-of-type .number {
+              color: #f5a706;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1199px) {
+      .container-questions_and_count {
+        max-width: 960px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      padding: 140px 0 0;
+
+      .container-questions_and_count {
+        max-width: 720px;
+
+        .questions-container-outside {
+          margin: 0 0 60px 0;
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      .container-questions_and_count {
+        max-width: 540px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .container-questions_and_count {
+        max-width: 100%;
+      }
+    }
+  }
+
+  #two-different-bg-color-section {
+    background-image: linear-gradient(90deg, #005ad3 50%, #0151bd 50%);
+
+    .container-two-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 125px 30px;
+      .content {
+        .title {
+          @include font(
+            $color: $whiteColor,
+            $f-size: 34px,
+            $f-weight: 700,
+            $l-height: 1.2
+          );
+          margin: 0 0 15px 0;
+        }
+        .text {
+          @include font(
+            $color: $whiteColor,
+            $f-weight: 600,
+            $f-size: 15px,
+            $l-height: 26px
+          );
+          margin: 0 0 35px 0;
+        }
+        .btn_ {
+          @extend %_btn;
+          background-color: $whiteColor;
+          width: auto;
+          border: none;
+        }
+      }
+    }
+
+    @media (max-width: 1199px) {
+      .container-two-content {
+        max-width: 960px;
+        padding: 125px 0;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .container-two-content {
+        max-width: 720px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      background-image: linear-gradient(#005ad3 50%, #0151bd 50%);
+
+      .container-two-content {
+        max-width: 540px;
+        .content {
+          padding: 30px 0;
+        }
+      }
+    }
+
+    @media (max-width: 575px) {
+      .container-two-content {
+        max-width: 720px;
+        padding: 20px 12px;
+
+        .content {
+          .title {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}

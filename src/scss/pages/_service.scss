@@ -1,0 +1,355 @@
+#service-main {
+  #head-section {
+    padding: 150px 20px;
+    text-align: center;
+    background-size: cover;
+    background-image: url("https://codeskdhaka.com/wp/wetland/wp-content/uploads/2023/02/page-title.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    .page-name {
+      @include font(
+        $f-size: 60px,
+        $f-weight: 700,
+        $color: $whiteColor,
+        $l-height: 1.2
+      );
+      margin: 0 0 15px 0;
+    }
+    .page-location {
+      span {
+        @include font(
+          $f-size: 15px,
+          $f-weight: 600,
+          $color: $whiteColor,
+          $l-height: 26px
+        );
+        margin: 0 18px;
+      }
+    }
+
+    .half-circle-over-x {
+      position: absolute;
+      width: auto;
+      height: auto;
+      bottom: 0;
+      right: 0;
+    }
+    .half-circle-left-top {
+      position: absolute;
+      width: auto;
+      height: auto;
+      top: 20%;
+      left: 0;
+    }
+    .triangle-rotate {
+      position: absolute;
+      top: 30%;
+      left: 20%;
+      width: auto;
+      height: auto;
+      animation: yellow-triangle 7s linear infinite;
+    }
+  }
+
+  #features-section {
+    padding: 120px 20px 80px;
+    background-color: #f4f9fd;
+
+    .conainer {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .features-service {
+        @include box(
+          $d: inline-block,
+          $border-r: 12px,
+          $p: 0 22px,
+          $m: 0 0 19px 0
+        );
+        @include font(
+          $color: #8f16c9,
+          $l-height: 24px,
+          $f-size: 14px,
+          $bg-color: rgba(200, 84, 255, 0.14)
+        );
+      }
+
+      .all-features {
+        @include box($d: flex, $m: 0 0 25px 0);
+        @include flex($a-items: start, $j-content: space-between);
+        .build-great {
+          @include box($d: inherit, $width: 376px);
+          @include font(
+            $color: #021937,
+            $l-height: 1.3,
+            $f-size: 40px,
+            $f-weight: 800
+          );
+        }
+
+        .all-features-btn {
+          @extend %_btnBlue;
+        }
+      }
+
+      .features-cards {
+        padding: 0 0 60px 0;
+        .outside-card {
+          .inside-card {
+            @include box($d: block, $p: 50px 70px 50px 47px, $border-r: 20px);
+            @include font($bg-color: $whiteColor);
+            box-shadow: 0px 40px 70px 0px rgba(1, 19, 44, 0.08);
+            .img-div {
+              @include box(
+                $d: block,
+                $width: 45px,
+                $height: 45px,
+                $m: 0 0 22px 0
+              );
+            }
+
+            .title {
+              @include box($d: block, $m: 0 0 13px 0);
+              @include font(
+                $f-size: 22px,
+                $color: #021937,
+                $f-weight: 700,
+                $l-height: 1.2
+              );
+
+              &:hover {
+                @include font($color: #2f80ed);
+              }
+            }
+
+            .text {
+              margin: 0;
+              @include font($f-size: 15px, $l-height: 22px, $color: #6c6a8a);
+            }
+          }
+        }
+      }
+
+      .perfect-solution {
+        @include box($d: flex, $p: 80px 0 0 0);
+        @include flex();
+        .img-div {
+          @include box($d: inherit, $width: 633px, $height: 483px);
+        }
+
+        .content {
+          @include box($d: flex, $p: 55px 0 0 60px, $width: calc(100% - 633px));
+          @include flex($f-direction: column, $a-items: start);
+          .features {
+            @include box(
+              $d: inline-block,
+              $p: 0 22px,
+              $border-r: 12px,
+              $m: 0 0 19px 0
+            );
+            @include font(
+              $f-weight: 400,
+              $color: #e50351,
+              $bg-color: rgba(253, 75, 133, 0.1),
+              $l-height: 24px,
+              $f-size: 14px
+            );
+          }
+
+          .title {
+            margin: 0 0 15px 0;
+            @include font(
+              $color: #021937,
+              $l-height: 1.3,
+              $f-size: 40px,
+              $f-weight: 800
+            );
+          }
+
+          .text {
+            @include font(
+              $f-weight: 600,
+              $f-size: 15px,
+              $color: #6c6a8a,
+              $l-height: 26px
+            );
+          }
+
+          .features-btn {
+            @extend %_btnBlue;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1199px) {
+      .conainer {
+        max-width: 960px;
+
+        .perfect-solution {
+          .img-div {
+            @include box($d: inherit, $width: 456px, $height: 348px);
+          }
+
+          .content {
+            @include box(
+              $d: flex,
+              $p: 10px 0 0 30px,
+              $width: calc(100% - 456px)
+            );
+
+            .features-btn {
+              line-height: 44px;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 991px) {
+      .conainer {
+        max-width: 720px;
+
+        .features-cards {
+          .outside-card {
+            width: 50%;
+          }
+        }
+
+        .perfect-solution {
+          @include flex($f-direction: column);
+
+          .img-div {
+            @include box($d: inherit, $width: 456px, $height: 348px);
+          }
+
+          .content {
+            @include box($d: flex, $p: 60px 0 0 0, $width: 65%);
+
+            .features-btn {
+              line-height: 44px;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      .conainer {
+        max-width: 540px;
+
+        .features-cards {
+          .outside-card {
+            width: 100%;
+          }
+        }
+
+        .perfect-solution {
+          @include flex($f-direction: column);
+
+          .img-div {
+            @include box($d: inherit, $width: 456px, $height: 348px);
+          }
+
+          .content {
+            @include box($d: flex, $p: 60px 0 0 0, $width: 100%);
+
+            .features-btn {
+              line-height: 44px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #prototyping-section {
+    padding: 0 20px;
+
+    .prototyping-container {
+      max-width: 1200px;
+      margin: auto;
+
+      .content {
+        width: 576px;
+        .title {
+          @include font(
+            $f-size: 40px,
+            $f-weight: 800,
+            $color: $primaryTextColor,
+            $l-height: 1.2
+          );
+          margin: 0 0 25px;
+        }
+        .text {
+          @include font($f-size: 15px, $color: #6c6a8a, $l-height: 26px);
+          margin: 0 0 25px;
+        }
+      }
+      .features {
+        .feature {
+          list-style: none;
+          .icon-div {
+            @include box(
+              $d: flex,
+              $width: 50px,
+              $height: 50px,
+              $bg-color: #fe3d97,
+              $border-r: 50px,
+              $m: 0 0 35px
+            );
+            @include flex($a-items: center, $j-content: center);
+
+            i {
+              font-size: 25px;
+              color: $whiteColor;
+            }
+          }
+          &:nth-of-type(2) .icon-div {
+            background-color: #3563fd;
+          }
+          &:nth-of-type(3) .icon-div {
+            background-color: #f0b735;
+          }
+          &:last-of-type .icon-div {
+            background-color: #945dff;
+          }
+          .title {
+            @include font(
+              $f-size: 22px,
+              $f-weight: 700,
+              $color: $primaryTextColor,
+              $l-height: 1.2
+            );
+            margin: 0 0 32px;
+          }
+          .item {
+            @include font(
+              $f-size: 15px,
+              $f-weight: 600,
+              $color: #474554,
+              $l-height: 26px
+            );
+            margin: 0 0 15px;
+
+            i {
+              background-color: #e7f7e6;
+              padding: 6px 7px;
+              border-radius: 50px;
+              color: #33c02f;
+              margin: 0 10px 0 0;
+            }
+
+            &:hover {
+              color: #33c02f;
+              i {
+                color: $whiteColor;
+                background-color: #33c02f;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

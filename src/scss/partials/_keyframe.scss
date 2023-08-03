@@ -47,3 +47,18 @@
     100%{transform: translateY(0);}
 
 }
+
+@keyframes big-img-div{
+    from{transform: translateY(0); }
+    to{transform: translateY(-30px);}
+}
+
+@keyframes top_right-img-div{
+    from{transform: translate(20%, 0);}
+    to{transform: translate(20%, -80px);}
+}
+
+@keyframes bottom-img-div{
+    from{transform: translate(0, 10%);}
+    to{transform: translate(-80px , 10%);}
+}

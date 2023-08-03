@@ -34,7 +34,7 @@
               $l-height: 26px
             );
 
-            @include box($d: inline-block, $p: 30px 0);
+            @include box($d: inline-block, $p: 30px 0, $bg-color: $whiteColor);
             transition: color 0.15s ease-in-out;
 
             span {
@@ -59,6 +59,7 @@
             list-style: none;
             min-width: 200px;
 
+            padding: 0;
             transform: translateY(15px);
             opacity: 0;
             transition: transform 0.45s, opacity 0.45s;
@@ -75,7 +76,8 @@
                   $d: inherit,
                   $p: 10px 25px,
                   $border-c: rgba(0, 0, 0, 0.1),
-                  $border-w: 0 0 1px 0
+                  $border-w: 0 0 1px 0,
+                  $bg-color: $whiteColor
                 );
 
                 position: relative;
@@ -129,7 +131,8 @@
           $f-size: $headerTextSize,
           $color: $btnTextColor,
           $l-height: 40px,
-          $f-weight: 600
+          $f-weight: 600,
+          $bg-color: $whiteColor
         );
         @include box($d: inherit, $border-s: none);
         transition: 0.2s color;
@@ -231,7 +234,7 @@
               $p: 30px,
               $bg-color: $whiteColor
             );
-            
+
             transform: translateX(100%);
             transition: transform 0.3s;
 
@@ -305,7 +308,7 @@
             }
 
             .mobile-login {
-             @extend %_btn;
+              @extend %_btn;
             }
 
             .mobile-get-started {
@@ -364,24 +367,86 @@
     }
   }
 
-  @media (max-width: 767px){
-    .header-nav{
+  @media (max-width: 767px) {
+    .header-nav {
       max-width: 540px;
 
-      .logo-menu{
+      .logo-menu {
         .logo-img-div {
-          @include box($d: inline-block, $width: 176px, $p: 15px 27px 15px 10px);
+          @include box(
+            $d: inline-block,
+            $width: 176px,
+            $p: 15px 27px 15px 10px
+          );
         }
       }
 
-      .acount-buttons{
-        .login{
+      .acount-buttons {
+        .login {
           display: none;
         }
-        .get-started{
+        .get-started {
           display: none;
         }
       }
+    }
+  }
+}
+
+#login-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1000000;
+  @include flex($j-content: center, $a-items: center);
+  display: none;
+  .login-form {
+    @include box($d: flex, $bg-color: $whiteColor, $border-r: 10px, $width: max(50%, 400px), $p: 50px);
+    @include flex($j-content: center, $a-items: center, $f-direction: column);
+    box-shadow: 0 0 30px 5px rgb(73, 73, 73);
+
+    .title {
+      text-align: center;
+      @extend %_h2Titles;
+      width: 100%;
+      display: block;
+      margin: 0 auto 30px;
+    }
+
+    .input {
+      width: max(50%, 300px);
+      padding: 10px 20px;
+      border: none;
+      background-color: #f2f7ff;
+      margin: 0 0 30px;
+      &:focus{
+        outline: 0;
+      }
+    }
+    .password-input-container {
+      position: relative;
+      display: block;
+      margin: auto;
+      width: max(50%, 300px);
+
+      .input {
+        margin: 0;
+        width: 100%;
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+      }
+    }
+    .submit-btn {
+      @extend %_btnBlue;
+      line-height: 40px;
+      font-size: 16px;
+      margin: 30px 0 0;
     }
   }
 }
