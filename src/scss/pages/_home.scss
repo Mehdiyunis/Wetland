@@ -61,7 +61,7 @@
       position: absolute;
       top: 480px;
       left: 84%;
-      z-index: 9999;
+      z-index: 9;
       animation: active273 7s linear infinite;
       filter: drop-shadow(rgb(221, 221, 221) 0 0 30px);
     }
@@ -70,7 +70,7 @@
       position: absolute;
       top: 200px;
       left: 50%;
-      z-index: 9998;
+      z-index: 8;
       filter: drop-shadow(rgb(221, 221, 221) 0 0 30px);
       animation: analitic-girl 4s linear infinite;
     }
@@ -228,7 +228,7 @@
       }
     }
 
-    @media (max-width: 959px) {
+    @media (max-width: 991px) {
       .head-container {
         max-width: 720px;
       }
@@ -237,11 +237,31 @@
     @media (max-width: 767px) {
       .head-container {
         max-width: 540px;
+        .content-container{
+          .aplication {
+            @include box($d: inline-block, $m: 0 0 20px 0, $width: 100%);
+            @include font(
+              $f-size: 45px,
+              $f-weight: 700,
+              $l-height: 1,
+              $color: $primaryTextColor
+            );
+          }
+        }
       }
 
       .bottom {
         bottom: 40px;
       }
+    }
+    @media (max-width: 575px) {
+      .head-container {
+        max-width: 343px;
+
+        
+      }
+
+      
     }
   }
 

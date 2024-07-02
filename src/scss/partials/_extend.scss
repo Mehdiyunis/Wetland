@@ -46,6 +46,7 @@
   color: $whiteColor;
   width: auto;
   line-height: 50px;
+  flex-shrink: 0;
 
   &::before {
     background-color: $whiteColor;

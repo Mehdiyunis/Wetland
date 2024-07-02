@@ -135,29 +135,7 @@ window.addEventListener("online", () => {
   setTimeout(() => (span.style.cssText += `top: -100px`), 5000);
 });
 
-// Dark Mode
 
-const darkModeBtn = document.createElement("button");
-darkModeBtn.classList.add("dark-mode-btn");
-body.appendChild(darkModeBtn);
-darkModeBtn.innerHTML = `<i class="fa-solid fa-moon"></i>`;
-
-darkModeBtn.addEventListener("click", () => {
-  const sections = document.querySelectorAll("section");
-  sections.forEach((section) => {
-    if (section.hasAttribute("data-dark")) {
-      section.removeAttribute("data-dark");
-    } else {
-      section.setAttribute("data-dark", "true");
-    }
-
-    if (section.hasAttribute("data-dark")) {
-      section.style.backgroundColor = "black";
-    } else {
-      section.style.backgroundColor = "white";
-    }
-  });
-});
 
 // Scroll Up
 window.onscroll = calcScrollValue = () => {
