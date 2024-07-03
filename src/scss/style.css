@@ -1338,6 +1338,20 @@ img {
     line-height: 44px;
   }
 }
+@media (max-width: 575px) {
+  #home-main #features-section .conainer {
+    max-width: 343px;
+  }
+  #home-main #features-section .conainer .all-features {
+    flex-direction: column;
+  }
+  #home-main #features-section .conainer .all-features .build-great {
+    width: 100%;
+  }
+  #home-main #features-section .conainer .all-features .all-features-btn {
+    width: 100%;
+  }
+}
 #home-main #real-time-chat .custom-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1532,13 +1546,13 @@ img {
 }
 @media (max-width: 575px) {
   #home-main #real-time-chat .custom-container {
-    max-width: 100%;
+    width: auto;
+    max-width: 343px;
+    padding-left: 0;
+    padding-right: 0;
   }
-  #home-main #real-time-chat .custom-container .filter-container .filter-btns {
-    margin-bottom: 70px;
-  }
-  #home-main #real-time-chat .custom-container .filter-container .filter-btns .filter-btn {
-    padding: 30px 25px;
+  #home-main #real-time-chat .custom-container .content {
+    width: 100%;
   }
 }
 #home-main #your-creative-web-design {
@@ -1860,7 +1874,7 @@ img {
 }
 @media (max-width: 575px) {
   #home-main #questions-users .container-questions_and_count {
-    max-width: 100%;
+    max-width: 343px;
   }
 }
 #home-main #cards-section .container-compare {
@@ -1908,6 +1922,26 @@ img {
 }
 #home-main #cards-section .container-compare .all-blog-btn {
   margin: auto;
+}
+@media (max-width: 1199px) {
+  #home-main #cards-section .container-compare {
+    max-width: 960px;
+  }
+}
+@media (max-width: 991px) {
+  #home-main #cards-section .container-compare {
+    max-width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  #home-main #cards-section .container-compare {
+    max-width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  #home-main #cards-section .container-compare {
+    max-width: 343px;
+  }
 }
 #home-main #two-different-bg-color-section {
   background-image: linear-gradient(90deg, #005ad3 50%, #0151bd 50%);
