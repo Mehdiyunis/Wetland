@@ -1040,6 +1040,10 @@ img {
   #home-main #home-head-aplication .bottom {
     bottom: 40px;
   }
+  #home-main #home-head-aplication .analitic {
+    left: 25px;
+    width: 80%;
+  }
 }
 @media (max-width: 575px) {
   #home-main #home-head-aplication .head-container {
@@ -1507,6 +1511,11 @@ img {
   animation: top_right-img-div 2s linear infinite alternate;
   border-radius: 10px;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  #home-main #real-time-chat .custom-container .filter-container .filter-items .filter-item .top_right-img-div {
+    right: 40px;
+  }
 }
 #home-main #real-time-chat .custom-container .filter-container .filter-items .filter-item .bottom-img-div {
   position: absolute;
