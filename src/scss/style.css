@@ -1044,6 +1044,9 @@ img {
     left: 25px;
     width: 80%;
   }
+  #home-main #home-head-aplication .team-meet {
+    bottom: 450px;
+  }
 }
 @media (max-width: 575px) {
   #home-main #home-head-aplication .head-container {
@@ -2037,6 +2040,7 @@ img {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  z-index: 10;
 }
 
 #progress-value {
@@ -2048,6 +2052,7 @@ img {
   display: grid;
   place-items: center;
   font-size: 30px;
+  line-height: 30px;
   color: #8065fd;
 }
 

@@ -256,6 +256,10 @@
         left: 25px;
         width: 80%;
       }
+
+      .team-meet {
+        bottom: 450px;
+      }
     }
 
     @media (max-width: 575px) {
@@ -1250,6 +1254,7 @@
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  z-index: 10;
 }
 
 #progress-value {
@@ -1261,5 +1266,6 @@
   display: grid;
   place-items: center;
   font-size: 30px;
+  line-height: 30px;
   color: #8065fd;
 }
