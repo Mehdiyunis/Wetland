@@ -747,7 +747,7 @@
 
     @media (max-width: 575px) {
       .content {
-        max-width: 100%;
+        max-width: 343px;
       }
     }
   }
@@ -893,7 +893,7 @@
 
     @media (max-width: 575px) {
       .slider-container {
-        max-width: 100%;
+        max-width:343px;
 
         .content {
           .title_btn {
@@ -1132,6 +1132,16 @@
     @media (max-width: 767px) {
       .container-compare {
         max-width: 540px;
+
+        .news-alytics {
+          @include font($f-size: 28px,
+            $color: #021937,
+            $t-align: center,
+            $l-height: 1.3,
+            $f-weight: 800);
+  
+          margin: 0 0 50px 0;
+        }
       }
     }
 
@@ -1203,7 +1213,7 @@
 
     @media (max-width: 575px) {
       .container-two-content {
-        max-width: 720px;
+        max-width: 343px;
         padding: 20px 12px;
 
         .content {

@@ -3,7 +3,7 @@
   .footer-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px 65px;
+    padding: 0 12px 65px;
     .content {
       list-style: none;
       .footer-logo {
@@ -106,10 +106,10 @@
 
   @media (max-width: 575px) {
     .footer-container {
-      max-width: 100%;
+      max-width: 343px;
     }
     .end-text {
-      max-width: 100%;
+      max-width: 343px;
     }
   }
 }

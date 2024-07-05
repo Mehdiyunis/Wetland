@@ -244,6 +244,10 @@
           }
         }
 
+        .all-features {
+          flex-direction: column;
+        }
+
         .perfect-solution {
           @include flex($f-direction: column);
 
@@ -261,10 +265,11 @@
         }
       }
     }
+
   }
 
   #prototyping-section {
-    padding: 0 20px;
+    padding: 40px 20px 0;
 
     .prototyping-container {
       max-width: 1200px;
@@ -348,6 +353,13 @@
               }
             }
           }
+        }
+      }
+
+      @media (max-width: 767px){
+        .content{
+          width: auto;
+          max-width: 575px;
         }
       }
     }

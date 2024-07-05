@@ -107,10 +107,28 @@
           }
   
           .info-input.text {
+            resize: none
           }
           .info-submit {
             @extend %_btnBlue;
           }
+        }
+
+      }
+      
+      @media (max-width: 991px){
+        .contact-container {
+          padding: 30px 60px 80px;
+        }
+      }
+      @media (max-width: 767px){
+        .contact-container {
+          padding: 30px 40px 6px;
+        }
+      }
+      @media (max-width: 576px){
+        .contact-container {
+          padding: 30px 15px 40px;
         }
       }
     }

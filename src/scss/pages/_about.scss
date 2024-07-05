@@ -164,6 +164,8 @@
             padding: 0;
             margin: 0 0 40px;
             .tool {
+              display: flex;
+              flex-shrink: 0;
               i {
                 font-size: 15px;
                 color: #6c6a8a;
@@ -203,8 +205,20 @@
             border: none;
             border-radius: 7px;
           }
+
+          @media (max-width: 992px){
+            .tool-btn {
+              margin-bottom: 30px;
+            }
+          }
         }
       }
+    }
+  }
+
+  @media (max-width: 767px){
+    #awesome-tool{
+      padding-bottom: 10px;
     }
   }
 
@@ -338,7 +352,7 @@
     }
 
     @media (max-width: 991px) {
-      padding: 140px 0 0;
+      padding: 140px 0 50px;
 
       .container-questions_and_count {
         max-width: 720px;
