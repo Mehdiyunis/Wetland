@@ -69,7 +69,7 @@ $(document).ready(function () {
 });
 
 // Features Cards
-async function getFeatures() {
+/* async function getFeatures() {
   const req = await fetch("http://localhost:3000/features");
   const res = await req.json();
   const featuresCards = document.querySelector(".features-cards"); 
@@ -93,7 +93,7 @@ async function getFeatures() {
     ` 
   })
 }
-getFeatures()
+getFeatures() */
 
 
 const loginBtn = document.querySelector(".acount-buttons .login");

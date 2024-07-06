@@ -8,6 +8,10 @@ body{
   overflow-x: hidden;
 }
 
+main{
+  margin-top: 72px;
+}
+
 ::selection {
   background: #444;
   color: #fff;
@@ -33,13 +37,6 @@ img {
   z-index: 99999;
 }
 
-.dark-mode-btn {
-  @extend %_btnBlue;
-  position: fixed;
-  top: 80px;
-  left: 10px;
-  z-index: 999999;
-}
 
 .no-link{
   background-color: #fff;

@@ -82,21 +82,23 @@ function countUp(valueDisplay) {
 // Header Scroll Fixed
 const wetlandHeader = document.querySelector("#wetland-header");
 
-window.onscroll = () => {
+window.addEventListener("scroll",() => {
   if (window.scrollY > 400) {
     wetlandHeader.classList.add("fixed");
+    console.log("sdfswfsa");
   } else {
     wetlandHeader.classList.remove("fixed");
   }
-};
+})
 
-// Online Ofline
+
+// Online Offline
 const span = document.createElement("span");
 const body = document.body;
 
 body.append(span);
 
-span.innerHTML = "Your are ofline";
+span.innerHTML = "Your are offline";
 
 span.style.cssText = `
 font-size: 1rem;
