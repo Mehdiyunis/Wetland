@@ -216,6 +216,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ::-moz-selection {
   background: #444;
   color: #fff;
@@ -252,6 +256,26 @@ img {
   top: 80px;
   left: 10px;
   z-index: 999999;
+}
+
+.no-link {
+  background-color: #fff;
+  border-top: 2px solid rgb(255, 0, 0);
+  border-bottom: 2px solid rgb(255, 0, 0);
+  padding: 15px 30px;
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: red;
+  text-align: center;
+  z-index: 10000;
+  transition: transform 0.3s;
+  box-shadow: 0 0 30px 3px #c2c2c2;
+}
+
+.no-link_show {
+  transform: translate(-50%, 200px);
 }
 
 #wetland-header {
@@ -2043,7 +2067,7 @@ img {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  z-index: 10;
+  z-index: 10000;
 }
 
 #progress-value {
@@ -2057,6 +2081,26 @@ img {
   font-size: 30px;
   line-height: 30px;
   color: #8065fd;
+}
+
+.no-link {
+  background-color: #fff;
+  border-top: 2px solid rgb(255, 0, 0);
+  border-bottom: 2px solid rgb(255, 0, 0);
+  padding: 15px 30px;
+  position: fixed;
+  top: -150px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: red;
+  text-align: center;
+  z-index: 10000;
+  transition: transform 0.3s;
+  box-shadow: 0 0 30px 3px #c2c2c2;
+}
+
+.no-link_show {
+  transform: translate(-50%, 200px);
 }
 
 #contact-main #head-section {
@@ -2281,6 +2325,12 @@ img {
   font-size: 40px;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
+}
+@media (max-width: 575px) {
+  #service-main #features-section .conainer .all-features .build-great {
+    width: auto;
+    max-width: 376px;
+  }
 }
 #service-main #features-section .conainer .features-cards {
   padding: 0 0 60px 0;

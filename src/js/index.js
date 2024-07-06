@@ -95,3 +95,48 @@ async function getFeatures() {
 }
 getFeatures()
 
+
+const loginBtn = document.querySelector(".acount-buttons .login");
+const loginModal = document.querySelector("#login-modal");
+
+loginBtn.addEventListener("click", () => {
+  loginModal.style.display = "flex";
+});
+
+
+loginModal.addEventListener("click", () => {
+  loginModal.style.display = `none`;
+});
+
+
+const submitBtn = document.querySelector(".login-form .submit-btn");
+
+submitBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  event.stopPropagation();
+
+  const email = document.querySelector("input[type='email']").value;
+  const pass = document.querySelector("input[type='password']").value;
+
+
+
+  const postData = {
+    email: email,
+    password: pass,
+  };
+
+  if(!email || !pass){
+    alert("Email or Password is Empty");
+  }
+  else{
+    fetch("http://localhost:3000/login", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(postData),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Response from the server:", data);
+    });
+  }
+});

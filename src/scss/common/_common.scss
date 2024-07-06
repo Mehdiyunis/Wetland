@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 ::selection {
   background: #444;
   color: #fff;
@@ -35,4 +39,24 @@ img {
   top: 80px;
   left: 10px;
   z-index: 999999;
+}
+
+.no-link{
+  background-color: #fff;
+  border-top: 2px solid rgb(255, 0, 0);
+  border-bottom: 2px solid rgb(255, 0, 0);
+  padding: 15px 30px;
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50% , 0);
+  color: red;
+  text-align: center;
+  z-index: 10000;
+  transition: transform .3s;
+  box-shadow: 0 0 30px 3px #c2c2c2;
+}
+
+.no-link_show{
+  transform: translate(-50% , 200px);
 }

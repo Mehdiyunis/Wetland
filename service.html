@@ -45,181 +45,208 @@
 <body>
 
     <header id="wetland-header">
-
         <nav class="header-nav">
-
-            <div class="logo-menu">
-                <div class="logo-img-div">
-                    <img src="https://codeskdhaka.com/wp/wetland/wp-content/themes/wetland/assets/img/logo/logo.png"
-                        alt="">
-                </div>
-
-                <ul class="menu-container">
-                    <li class="menu-item-li">
-                        <a class="item-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="menu-item-li">
-                        <a class="item-link" href="./about.html">About</a>
-
-                    </li>
-                    <li class="menu-item-li">
-                        <a class="item-link" href="#">Service<span class="material-symbols-outlined">
-                                expand_more
-                            </span></a>
-
-                        <ul class="inside-items-container">
-                            <li class="inside-item-li"><a class="inside-link" href="./service.html">Service</a></li>
-                            <li class="inside-item-li"><a class="inside-link" href="#">Service Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-li">
-                        <a class="item-link" href="#">Blog<span class="material-symbols-outlined">
-                                expand_more
-                            </span></a>
-
-                        <ul class="inside-items-container">
-                            <li class="inside-item-li"><a class="inside-link" href="#">Blog Sidebar</a></li>
-                            <li class="inside-item-li"><a class="inside-link" href="#">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-li">
-                        <a class="item-link" href="#">Pages<span class="material-symbols-outlined">
-                                expand_more
-                            </span></a>
-
-                        <ul class="inside-items-container">
-                            <li class="inside-item-li"><a class="inside-link" href="#">Faq</a></li>
-                            <li class="inside-item-li"><a class="inside-link" href="#">Portfolio</a></li>
-                            <li class="inside-item-li"><a class="inside-link" href="#">Portfolio Details</a></li>
-                            <li class="inside-item-li"><a class="inside-link" href="#">Team</a></li>
-                            <li class="inside-item-li"><a class="inside-link" href="#">Team Details</a></li>
-                            <li class="inside-item-li"><a class="inside-link" href="#">404 Error</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-li">
-                        <a class="item-link" href="./contact.html">Contact</a>
-
-                    </li>
+          <div class="logo-menu">
+            <div class="logo-img-div">
+              <img
+                src="https://codeskdhaka.com/wp/wetland/wp-content/themes/wetland/assets/img/logo/logo.png"
+                alt=""
+              />
+            </div>
+  
+            <ul onclick="noLinkFun()" class="menu-container">
+              <li class="menu-item-li">
+                <a class="item-link" href="./index.html">Home</a>
+              </li>
+              <li onclick="noLinkFun()" class="menu-item-li">
+                <a class="item-link" href="./about.html">About</a>
+              </li>
+              <li class="menu-item-li">
+                <a class="item-link" href="#"
+                  >Service<span class="material-symbols-outlined">
+                    expand_more
+                  </span></a
+                >
+  
+                <ul class="inside-items-container">
+                  <li class="inside-item-li">
+                    <a class="inside-link" href="./service.html">Service</a>
+                  </li>
+                  <li onclick="noLinkFun()" class="inside-item-li">
+                    <a class="inside-link" href="#">Service Details</a>
+                  </li>
                 </ul>
-            </div>
-
-            <div class="acount-buttons">
-
-                <button class="login">Login</button>
-                <button class="get-started">Get Started</button>
-
-                <div class="mobile-menu-container">
-                    <button class="menu-open-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-
-                    <div class="fullscreen-container">
-                        <div class="mobile-menu">
-                            <div class="logo-img-div">
-                                <img src="https://codeskdhaka.com/wp/wetland/wp-content/themes/wetland/assets/img/logo/logo.png"
-                                    alt="">
-                            </div>
-
-                            <ul class="acordion-menu">
-                                <li class="menu-item">
-                                    <span class="menu-item-link_open">
-                                        <a class="item-link" href="./index.html">HOME</a>
-                                    </span>
-                                </li>
-
-                                <li class="menu-item">
-                                    <span class="menu-item-link_open">
-                                        <a class="item-link" href="./about.html">ABOUT</a>
-                                    </span>
-
-                                </li>
-
-                                <li class="menu-item">
-                                    <span class="menu-item-link_open">
-                                        <a class="item-link" href="./service.html">SERVICE</a>
-
-                                        <span class="item-open">
-
-                                            <span class="material-symbols-outlined ">
-                                                add
-                                            </span>
-                                        </span>
-                                    </span>
-
-                                    <ul class="inside-items">
-                                        <li class="inside-item"><a class="inside-item-link" href="#">SERVICE</a></li>
-                                        <li class="inside-item"><a class="inside-item-link" href="#">SERVICE DETAILS</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="menu-item">
-                                    <span class="menu-item-link_open">
-                                        <a class="item-link" href="#">BLOG</a>
-
-                                        <span class="item-open">
-
-                                            <span class="material-symbols-outlined ">
-                                                add
-                                            </span>
-                                        </span>
-                                    </span>
-
-                                    <ul class="inside-items">
-                                        <li class="inside-item"><a class="inside-item-link" href="#">BLOG SLIDEBAR</a>
-                                        </li>
-                                        <li class="inside-item"><a class="inside-item-link" href="#">BLOG DETAILS</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="menu-item">
-                                    <span class="menu-item-link_open">
-                                        <a class="item-link" href="#">PAGES</a>
-                                        <span class="item-open">
-
-                                            <span class="material-symbols-outlined ">
-                                                add
-                                            </span>
-                                        </span>
-                                    </span>
-
-                                    <ul class="inside-items">
-                                        <li class="inside-item"><a class="inside-item-link" href="#">FAQ</a></li>
-                                        <li class="inside-item"><a class="inside-item-link" href="#">PORTFOLIO</a></li>
-                                        <li class="inside-item"><a class="inside-item-link" href="#">PORTFOLIO
-                                                DETAILS</a></li>
-                                        <li class="inside-item"><a class="inside-item-link" href="#">TEAM</a></li>
-                                        <li class="inside-item"><a class="inside-item-link" href="#">TEAM DETAILS</a>
-                                        </li>
-                                        <li class="inside-item"><a class="inside-item-link" href="#">404 ERROR</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="menu-item">
-                                    <span class="menu-item-link_open">
-                                        <a class="item-link" href="./contact.html">CONTACT</a>
-                                    </span>
-
-                                </li>
-                            </ul>
-
-                            <button class="mobile-login">Login</button>
-                            <button class="mobile-get-started">Get Started</button>
-
-                        </div>
-                    </div>
+              </li>
+              <li class="menu-item-li">
+                <a class="item-link" href="#"
+                  >Blog<span class="material-symbols-outlined">
+                    expand_more
+                  </span></a
+                >
+  
+                <ul class="inside-items-container">
+                  <li onclick="noLinkFun()" class="inside-item-li">
+                    <a class="inside-link" href="#">Blog Sidebar</a>
+                  </li>
+                  <li onclick="noLinkFun()" class="inside-item-li">
+                    <a class="inside-link" href="#">Blog Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item-li">
+                <a class="item-link" href="#"
+                  >Pages<span class="material-symbols-outlined">
+                    expand_more
+                  </span></a
+                >
+  
+                <ul class="inside-items-container">
+                  <li onclick="noLinkFun()" class="inside-item-li">
+                    <a class="inside-link" href="#">Faq</a>
+                  </li>
+                  <li onclick="noLinkFun()" class="inside-item-li">
+                    <a class="inside-link" href="#">Portfolio</a>
+                  </li>
+                  <li onclick="noLinkFun()" class="inside-item-li">
+                    <a class="inside-link" href="#">Portfolio Details</a>
+                  </li>
+                  <li onclick="noLinkFun()" class="inside-item-li">
+                    <a class="inside-link" href="#">Team</a>
+                  </li>
+                  <li onclick="noLinkFun()" class="inside-item-li">
+                    <a class="inside-link" href="#">Team Details</a>
+                  </li>
+                  <li onclick="noLinkFun()" class="inside-item-li">
+                    <a class="inside-link" href="#">404 Error</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item-li">
+                <a class="item-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="acount-buttons">
+            <button class="login">Login</button>
+            <button class="get-started">Get Started</button>
+  
+            <div class="mobile-menu-container">
+              <button class="menu-open-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+  
+              <div class="fullscreen-container">
+                <div class="mobile-menu">
+                  <div class="logo-img-div">
+                    <img
+                      src="https://codeskdhaka.com/wp/wetland/wp-content/themes/wetland/assets/img/logo/logo.png"
+                      alt=""
+                    />
+                  </div>
+  
+                  <ul class="acordion-menu">
+                    <li class="menu-item">
+                      <span class="menu-item-link_open">
+                        <a class="item-link" href="./index.html">HOME</a>
+                      </span>
+                    </li>
+  
+                    <li class="menu-item">
+                      <span class="menu-item-link_open">
+                        <a class="item-link" href="./about.html">ABOUT</a>
+                      </span>
+                    </li>
+  
+                    <li class="menu-item">
+                      <span class="menu-item-link_open">
+                        <a class="item-link" href="#">SERVICE</a>
+  
+                        <span class="item-open">
+                          <span class="material-symbols-outlined"> add </span>
+                        </span>
+                      </span>
+  
+                      <ul class="inside-items">
+                        <li class="inside-item">
+                          <a class="inside-item-link" href="./service.html"
+                            >SERVICE</a
+                          >
+                        </li>
+                        <li onclick="noLinkFun()" class="inside-item">
+                          <a class="inside-item-link" href="#">SERVICE DETAILS</a>
+                        </li>
+                      </ul>
+                    </li>
+  
+                    <li class="menu-item">
+                      <span class="menu-item-link_open">
+                        <a class="item-link" href="#">BLOG</a>
+  
+                        <span class="item-open">
+                          <span class="material-symbols-outlined"> add </span>
+                        </span>
+                      </span>
+  
+                      <ul class="inside-items">
+                        <li onclick="noLinkFun()" class="inside-item">
+                          <a class="inside-item-link" href="#">BLOG SLIDEBAR</a>
+                        </li>
+                        <li onclick="noLinkFun()" class="inside-item">
+                          <a class="inside-item-link" href="#">BLOG DETAILS</a>
+                        </li>
+                      </ul>
+                    </li>
+  
+                    <li class="menu-item">
+                      <span class="menu-item-link_open">
+                        <a class="item-link" href="#">PAGES</a>
+                        <span class="item-open">
+                          <span class="material-symbols-outlined"> add </span>
+                        </span>
+                      </span>
+  
+                      <ul class="inside-items">
+                        <li onclick="noLinkFun()" class="inside-item">
+                          <a class="inside-item-link" href="#">FAQ</a>
+                        </li>
+                        <li onclick="noLinkFun()" class="inside-item">
+                          <a class="inside-item-link" href="#">PORTFOLIO</a>
+                        </li>
+                        <li onclick="noLinkFun()" class="inside-item">
+                          <a class="inside-item-link" href="#"
+                            >PORTFOLIO DETAILS</a
+                          >
+                        </li>
+                        <li onclick="noLinkFun()" class="inside-item">
+                          <a class="inside-item-link" href="#">TEAM</a>
+                        </li>
+                        <li onclick="noLinkFun()" class="inside-item">
+                          <a class="inside-item-link" href="#">TEAM DETAILS</a>
+                        </li>
+                        <li onclick="noLinkFun()" class="inside-item">
+                          <a class="inside-item-link" href="#">404 ERROR</a>
+                        </li>
+                      </ul>
+                    </li>
+  
+                    <li class="menu-item">
+                      <span class="menu-item-link_open">
+                        <a class="item-link" href="./contact.html">CONTACT</a>
+                      </span>
+                    </li>
+                  </ul>
+  
+                  <button class="mobile-login">Login</button>
+                  <button class="mobile-get-started">Get Started</button>
                 </div>
-
+              </div>
             </div>
-
+          </div>
         </nav>
-
-
-
-    </header>
+      </header>
 
 
     <main id="service-main">

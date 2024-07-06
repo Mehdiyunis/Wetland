@@ -87,6 +87,13 @@
           );
         }
 
+        @media (max-width: 575px){
+          .build-great{
+            width: auto;
+            max-width: 376px;
+          }
+        }
+
         .all-features-btn {
           @extend %_btnBlue;
         }
