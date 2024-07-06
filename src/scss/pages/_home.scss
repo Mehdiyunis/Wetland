@@ -614,7 +614,7 @@
             .top_right-img-div {
               position: absolute;
               top: 200px;
-              right: 0;
+              right: 15px;
               filter: drop-shadow(rgb(221, 221, 221) 0 0 30px);
 
               animation: top_right-img-div 2s linear infinite alternate;
@@ -679,6 +679,9 @@
               padding: 30px 25px;
             }
           }
+        }
+        .content {
+          width: 100%;
         }
       }
     }

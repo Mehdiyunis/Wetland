@@ -1509,7 +1509,7 @@ img {
 #home-main #real-time-chat .custom-container .filter-container .filter-items .filter-item .top_right-img-div {
   position: absolute;
   top: 200px;
-  right: 0;
+  right: 15px;
   filter: drop-shadow(rgb(221, 221, 221) 0 0 30px);
   animation: top_right-img-div 2s linear infinite alternate;
   border-radius: 10px;
@@ -1554,6 +1554,9 @@ img {
   }
   #home-main #real-time-chat .custom-container .filter-container .filter-btns .filter-btn {
     padding: 30px 25px;
+  }
+  #home-main #real-time-chat .custom-container .content {
+    width: 100%;
   }
 }
 @media (max-width: 575px) {
