@@ -106,13 +106,14 @@ font-weight: 500;
 color: #f0f0f0;
 font-family: "Open Sans", sans-serif;
 position: absolute;
-top: -100px;
+top: -200px;
 left: 50%;
 transform: translateX(-50%);
-padding: 17px 90px;
+padding: 15px 30px;
 border: 0;
 border-radius: 20px;
 transition: top .6s;
+  text-align: center;
 `;
 
 window.addEventListener("offline", () => {
